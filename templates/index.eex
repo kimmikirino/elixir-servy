@@ -1,0 +1,16 @@
+<h1>All The Bears!</h1>
+
+<span>using enum</span>
+<ul>
+  <%= Enum.map(bears, fn(bear) -> %>
+    <li><%= bear.name %> - <%= bear.type %> </li>
+  <%= end) %>
+</ul>
+
+<span>using for and left arrow</span>
+<ul>
+  <%= for bear <- bears do %>
+    <li><%= bear.name %> - <%= bear.type %> </li>
+  <%= end %>
+</ul>
+
